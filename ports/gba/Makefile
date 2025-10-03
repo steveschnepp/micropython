@@ -5,6 +5,8 @@ include ../../py/mkenv.mk
 include $(TOP)/py/py.mk
 include $(TOP)/extmod/extmod.mk
 
+include gba.mk
+
 # Set CFLAGS and libraries.
 CFLAGS += -I. -I$(BUILD) -I$(TOP)
 LIBS += -lm
