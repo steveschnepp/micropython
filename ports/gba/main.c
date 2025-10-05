@@ -16,7 +16,7 @@ int main(int argc, char **argv) {
     mp_init();
 
     // Start a normal REPL; will exit when ctrl-D is entered on a blank line.
-    pyexec_friendly_repl();
+    pyexec_file("./main.py");
 
     // Deinitialise the runtime.
     gc_sweep_all();
